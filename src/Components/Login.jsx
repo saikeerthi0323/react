@@ -46,7 +46,7 @@ const Login = () => {
               />
             </Form.Group>
             <Button variant="secondary" type="submit" className="mt-4 w-100">
-              <Link to="/menu">Login</Link>
+              <Link to="/dashboard">Login</Link>
             </Button>
           </Form>
           <div className="text-center mt-3">

@@ -355,76 +355,6 @@ button:hover {
 
 
 
-
-/* Dashboard.css */
-.container {
-  padding: 50px;
-}
-
-.paper {
-  padding: 20px; 
-  margin: 80px;  
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 8px; 
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-  box-sizing: border-box; 
-}
-.paper:hover {
-  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); 
-  transform: translateY(-5px); 
-}
-.chart-title {
-  margin-bottom: 20px; 
-  font-size: 1.5em;
-  text-align: center;
-  transition: color 0.3s ease; 
-}
-.chart-title:hover {
-  color: #3f51b5; 
-}
-.pie-chart,
-.bar-chart {
-  display: flex;
-  justify-content: center; 
-  align-items: center;     
-  height: 400px;            
-}
-/* Dashboard.hover */
-.pie-chart:hover,
-.bar-chart:hover {
-  cursor: pointer; 
-  transition: opacity 0.3s ease; 
-}
-
-.pie-chart:hover {
-  opacity: 0.9; 
-}
-
-.bar-chart:hover {
-  opacity: 0.9; 
-}
-
-
-/* Optional: Additional style for responsive design */
-@media (max-width: 600px) {
-  .container {
-    padding: 20px; 
-  }
-
-  .paper {
-    padding: 10px; 
-    margin: 10px;  
-  }
-
-  .chart-title {
-    font-size: 1.2em; 
-  }
-}
-
-
-
-
-
 /*about.css*/
 .about-us-section {
   display: flex;
@@ -584,4 +514,61 @@ h1 {
 
 .mt-4 {
   margin-top: 1.5rem;
+}
+
+
+
+
+
+.container {
+  margin-top: 20px;
+}
+
+.chart-title {
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.paper {
+  padding: 20px;
+  margin: 80px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.pie-chart, .bar-chart, .line-chart, .historical-chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+.small-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #555;
+  margin: 40px;
+}
+
+.small-container:hover {
+  background-color: #e0e0e0;
+  transition: background-color 0.3s ease;
+}
+
+.grid-container {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .small-container {
+    font-size: 1rem;
+    padding: 15px;
+  }
 }

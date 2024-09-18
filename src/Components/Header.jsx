@@ -17,13 +17,13 @@ function Header() {
       <div className='navbar-brand'>Bistro Bella</div>
       <ul className='navbar-nav'>
         <li className='nav-item'>
-          <Link className='nav-link' to='/menu'>
-            <FontAwesomeIcon icon={faUtensils} /> Menu
+          <Link className='nav-link' to='/dashboard'>
+            <FontAwesomeIcon icon={faChartLine} /> Dasboard
           </Link>
         </li>
         <li className='nav-item'>
-          <Link className='nav-link' to='/dashboard'>
-            <FontAwesomeIcon icon={faChartLine} /> Dasboard
+          <Link className='nav-link' to='/menu'>
+            <FontAwesomeIcon icon={faUtensils} /> Menu
           </Link>
         </li>
         <li className='nav-item'>
