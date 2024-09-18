@@ -1,36 +1,587 @@
-.App {
+/* Header.css */
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  background-color:#D7D4CC; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+  border-right: 1px solid #e0e0e0;
+}
+
+/* Branding style */
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #8b5e3c; 
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Style for the navigation items */
+.navbar-nav {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar-nav .nav-item {
+  margin: 15px 0;
+}
+
+.navbar-nav .nav-link {
+  text-decoration: none;
+  color: #5a4b5a;
+  font-size: 18px;
+  display: block;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: bisque; 
+  color: #8b5e3c;
+}
+
+
+/* Header styling */
+.header {
+  width: 250px; 
+  background-color: #333; 
+  color: #fff;
+  position: fixed; 
+  height: 100%; 
+  top: 0;
+  left: 0;
+  overflow-y: auto; 
+  padding: 20px; 
+}
+
+
+
+
+
+
+/* Menu.css */
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+  width: calc(100% - 250px); 
+  overflow: auto; 
+}
+
+/* Container for reservations */
+.reservation-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Flexbox layout for smaller screens */
+.food-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; 
+}
+
+/* Individual food item styling */
+.food-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  width: 300px; 
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin: 10px; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+/* Image styling */
+.food-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease; 
+}
+
+/* Text styling */
+.food-item h2 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.food-item p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Button styling */
+.food-item button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+.food-item button:hover {
+  background-color: #0056b3;
+}
+
+/* Hover effect for food items */
+.food-item:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+/* Hover effect for images */
+.food-item img:hover {
+  transform: scale(1.1); 
+}
+
+/* Grid layout for larger screens */
+@media (min-width: 768px) {
+  .food-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Adjust grid layout for medium screens */
+@media (max-width: 767px) {
+  .food-items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+/* Single column grid layout for smaller screens */
+@media (max-width: 480px) {
+  .food-items {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+/* booking.css */
+/* Style for the entire card container */
+.maincard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  margin-left: 150px;
+  height: auto; /* Adjust height to fit content */
+}
+
+/* Individual card styling */
+.card {
+  background-color: #fff8f0; 
+  border: 1px solid #f0e5d8; 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+  width: 300px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image styling within the card */
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+/* Text styling for card content */
+.card p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #5a4b5a;
+}
+
+/* Styling for the Link element */
+.card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Adding some padding to the Header */
+header {
+  padding: 20px;
+  background-color: #8b5e3c; 
+  color: #ffffff; 
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.cart {
+  margin-top: 20px;
+  padding: 10px;
+  border-top: 1px solid #f0e5d8; 
+}
+
+.cart h2 {
+  margin-bottom: 10px;
+  color: #8b5e3c; 
+}
+
+.cart div {
+  margin-bottom: 10px;
+}
+
+
+
+
+
+/* Contact Page Styles */
+
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.contact-page h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+form {
+  width: 100%;
+  max-width: 600px;
+  background: #D7D4CC;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: grey;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+/* LoginPage.css */
+.hi {
+  background-image:url('./Assets/food.jpeg');
+  padding:0;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+ }
+ 
+ .card{
+   border-radius: 8 px;
+   background-color: rgba(255, 255, 255, 0.9); 
+ }
+
+
+
+
+
+
+/* Dashboard.css */
+.container {
+  padding: 50px;
+}
+
+.paper {
+  padding: 20px; 
+  margin: 80px;  
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; 
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  box-sizing: border-box; 
+}
+.paper:hover {
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); 
+  transform: translateY(-5px); 
+}
+.chart-title {
+  margin-bottom: 20px; 
+  font-size: 1.5em;
+  text-align: center;
+  transition: color 0.3s ease; 
+}
+.chart-title:hover {
+  color: #3f51b5; 
+}
+.pie-chart,
+.bar-chart {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  height: 400px;            
+}
+/* Dashboard.hover */
+.pie-chart:hover,
+.bar-chart:hover {
+  cursor: pointer; 
+  transition: opacity 0.3s ease; 
+}
+
+.pie-chart:hover {
+  opacity: 0.9; 
+}
+
+.bar-chart:hover {
+  opacity: 0.9; 
+}
+
+
+/* Optional: Additional style for responsive design */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px; 
+  }
+
+  .paper {
+    padding: 10px; 
+    margin: 10px;  
+  }
+
+  .chart-title {
+    font-size: 1.2em; 
+  }
+}
+
+
+
+
+
+/*about.css*/
+.about-us-section {
+  display: flex;
+  align-items: flex-start; 
+  justify-content: space-between; 
+  padding: 50px;
+  background-color: #f4f4f4; 
+}
+
+.image-section {
+  flex: 1; 
+  display: flex;
+  justify-content: center; 
+}
+
+.about-us-image {
+  width: 100%; 
+  max-width:600px; 
+  border-radius: 8px;
+  padding-left: 160px;
+  max-height: 1000px;
+  
+}
+
+.text-section {
+  flex: 1.5; 
+  padding-left: 40px;
+}
+
+.title {
+  font-family: 'Lobster', cursive;
+  font-size: 36px;
+  color: #444;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #444;
+  margin-top: 10px;
+}
+
+.text-section h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.text-section p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.since {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  margin-top: 20px;
+}
+
+.since span {
+  color: orange;
+}
+
+
+
+
+
+
+/* signup.css */
+
+.reservation-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.form-container {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-group {
+  margin-bottom: 1.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #555;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.form-control {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #007bff;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-primary:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+.mt-4 {
+  margin-top: 1.5rem;
 }
