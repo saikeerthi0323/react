@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Login from './Components/Login.jsx';
-import { BrowserRouter as Router, Routes, Route, } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, } from 'react-router-dom';
 import Signup from './Components/Signup.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NotFound from './Components/NotFound.jsx';
